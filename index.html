@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <div>
+                <i class="fa fa-calculator"></i>
+                Calculadora
+            </div>
+            <p id="resultado"></p>
+
+            <div class="containerBotoes">
+                <button class="botao" onclick="calcularPorcentagem()">%</button>
+                <button class="botao" onclick="limpar()">C</button>
+                <button class="botao"onclick="calcularNumeroAoQuadrado()">x<sup>2</sup></button>
+                <button class="botaoDelete" onclick="deletar()"><</button>
+                
+                <button class="botao" onclick="inserir('7')">7</button>
+                <button class="botao" onclick="inserir('8')">8</button>
+                <button class="botao" onclick="inserir('9')">9</button>
+                <button class="botao" onclick="inserir('/')">÷</button>
+                
+                <button class="botao" onclick="inserir('4')">4</button>
+                <button class="botao" onclick="inserir('5')">5</button>
+                <button class="botao" onclick="inserir('6')">6</button>
+                <button class="botao" onclick="inserir('*')">x</button>
+                
+                <button class="botao" onclick="inserir('1')">1</button>
+                <button class="botao" onclick="inserir('2')">2</button>
+                <button class="botao" onclick="inserir('3')">3</button>
+                <button class="botao" onclick="inserir('-')">-</button>
+                
+                <button class="botao" onclick="inserir('0')">0</button>
+                <button class="botao" onclick="inserir('.')">.</button>
+                <button class="botao" onclick="inserir('+')">+</button>
+                <button class="botaoCalcular" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Copyright 2022 Calculadora - Todos os direitos reservados
+
+        <section>
+            <div id="links-footer" class="links">
+                <a href="https://github.com/Delsivan" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/github.png" alt="Github" title="Github">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/delsivan-nascimento-vieira-8b089784/" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/linkedin.png" alt="Linkedin" title="Linkedin">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<script src="scripts/calc.js"></script>
+</html>
